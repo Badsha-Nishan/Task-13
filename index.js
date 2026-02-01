@@ -41,14 +41,25 @@
 // Task-4
 // Write a function called count_zero() which will take a binary string (Binary string is a string which is consist of only 0 and 1) as parameter and count how many 0’s are there in that string.
 
-const str = "01000101000101010100001";
-function count_zero(binaryStr) {
-  let count = 0;
-  for (const val of binaryStr) {
-    if (val === "0") count++;
-  }
-  return count;
+// const str = "01000101000101010100001";
+// function count_zero(binaryStr) {
+//   let count = 0;
+//   for (const val of binaryStr) {
+//     if (val === "0") count++;
+//   }
+//   return count;
+// }
+
+// const result = count_zero(str);
+// console.log(result);
+
+// Task-5
+// Write a function called odd_even() which takes an integer value and tells whether this value is even or odd. If even return Even. If odd return Odd
+
+const num = 22;
+function odd_even(number) {
+  return number % 2 === 0 ? "Even" : "Odd";
 }
 
-const result = count_zero(str);
+const result = odd_even(num);
 console.log(result);
